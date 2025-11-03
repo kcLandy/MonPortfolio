@@ -481,6 +481,57 @@ footer {
 }
 
 /* ========================================
+   LIENS DE PROJET
+   ======================================== */
+.project-links {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 8px 15px;
+    border: 3px solid var(--black);
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 0.7em;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 0 var(--black);
+}
+
+.project-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 0 var(--black);
+}
+
+.project-link.github {
+    background: linear-gradient(135deg, #333333 0%, #24292e 100%);
+    color: var(--white);
+}
+
+.project-link.github:hover {
+    background: linear-gradient(135deg, #444444 0%, #35393e 100%);
+}
+
+.project-link.demo {
+    background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+    color: var(--white);
+}
+
+.project-link.demo:hover {
+    background: linear-gradient(135deg, #5CBF60 0%, #55b059 100%);
+}
+
+.link-icon {
+    font-size: 1.2em;
+}
+
+/* ========================================
    RESPONSIVE
    ======================================== */
 @media (max-width: 768px) {
